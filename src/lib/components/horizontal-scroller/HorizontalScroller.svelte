@@ -6,7 +6,7 @@
 {#if !!title}
 	<div class="title">
 		<h3>{title}</h3>
-		<span>➡️</span>
+		<span><img src="right-arrow.svg" alt="right-arrow" /></span>
 	</div>
 {/if}
 <section class="container" {style}>
@@ -14,6 +14,10 @@
 </section>
 
 <style>
+	img {
+		width: 2.5ch;
+		height: 2.5ch;
+	}
 	.title {
 		--gap: 4ch;
 
