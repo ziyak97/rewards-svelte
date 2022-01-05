@@ -1,3 +1,12 @@
+<script lang="ts">
+	export let id: number;
+	export let title: string;
+	export let imageUrl: string;
+	export let backgroundUrl: string;
+	export let rating: number;
+	export let appSize: number;
+</script>
+
 <div class="container">
 	<div class="avatars">
 		<span>😄</span>
@@ -5,18 +14,24 @@
 		<span>🤗</span>
 	</div>
 	<article class="card">
-		<div class="image"><img /></div>
-		<h4>Ludo King TV</h4>
+		<img class="background" src={backgroundUrl} alt="background" />
+		<div class="image"><img src={imageUrl} alt="logo" /></div>
+		<h4>{title}</h4>
 		<div class="stats">
-			<span class="rating">⭐ 4.3</span>
+			<span class="rating">⭐ {rating}</span>
 			<span class="divider">|</span>
-			<span class="size">8 MB</span>
+			<span class="size">{appSize} MB</span>
 		</div>
 		<div class="download">🔥</div>
 	</article>
 </div>
 
 <style>
+	img {
+		width: 100%;
+		height: 100%;
+		border-radius: 1ch;
+	}
 	h4 {
 		white-space: nowrap;
 		overflow: hidden;
@@ -28,6 +43,13 @@
 	.container {
 		color: #fff;
 		text-align: center;
+	}
+
+	.background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
 	}
 	.avatars {
 		position: relative;
@@ -52,11 +74,11 @@
 		left: -15px;
 	}
 	.card {
-		background: crimson;
 		border-radius: 1.5ch;
 		padding: 1ch;
 		width: 15ch;
 		height: 20ch;
+		position: relative;
 	}
 
 	.image {

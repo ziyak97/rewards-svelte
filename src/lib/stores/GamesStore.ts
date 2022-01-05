@@ -46,6 +46,41 @@ const gameBannersStreamData = [
 	}
 ];
 
+const socialGamesData = [
+	{
+		id: 1,
+		title: 'Subway Surfers',
+		imageUrl: 'subway-surfers.jpg',
+		backgroundUrl: 'bg-purple.png',
+		rating: 4.1,
+		appSize: 84
+	},
+	{
+		id: 2,
+		title: "Where's My Water",
+		imageUrl: 'wheres-my-water-logo.png',
+		backgroundUrl: 'bg-yellow.png',
+		rating: 4.5,
+		appSize: 9.8
+	},
+	{
+		id: 3,
+		title: 'Temple Run',
+		imageUrl: 'temple-run-logo.png',
+		backgroundUrl: 'bg-red.png',
+		rating: 4.4,
+		appSize: 22
+	},
+	{
+		id: 4,
+		title: 'Cut The Rope',
+		imageUrl: 'cut-the-rope-logo.jpg',
+		backgroundUrl: 'bg-purple.png',
+		rating: 3.9,
+		appSize: 21
+	}
+];
+
 function getGameBannersTournament() {
 	const { subscribe } = writable(gameBannersTournamentData);
 
@@ -62,5 +97,14 @@ function getGameBannersStream() {
 	};
 }
 
+function getSocialGames() {
+	const { subscribe } = writable(socialGamesData);
+
+	return {
+		subscribe
+	};
+}
+
 export const gameBannersTournament = getGameBannersTournament();
 export const gameBannersStream = getGameBannersStream();
+export const socialGames = getSocialGames();
