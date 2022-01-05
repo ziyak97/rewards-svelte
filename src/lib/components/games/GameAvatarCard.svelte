@@ -9,9 +9,9 @@
 
 <div class="container">
 	<div class="avatars">
-		<span>😄</span>
-		<span>😋</span>
-		<span>🤗</span>
+		<span><img src="avatar1.jpg" alt="profile" /></span>
+		<span><img src="avatar2.jpg" alt="profile" /></span>
+		<span><img src="avatar3.jpg" alt="profile" /></span>
 	</div>
 	<article class="card">
 		<img class="background" src={backgroundUrl} alt="background" />
@@ -53,14 +53,17 @@
 	}
 	.avatars {
 		position: relative;
-		top: 10px;
+		top: 20px;
 		font-size: 1.3rem;
 	}
 	.avatars > span {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
 		position: relative;
 		background: #fff;
 		border-radius: 50%;
-		padding: 0.5ch;
+		padding: 0.2ch;
 	}
 	.avatars > span:nth-child(1) {
 		z-index: 100;
@@ -72,6 +75,12 @@
 	.avatars > span:nth-child(3) {
 		z-index: 1;
 		left: -15px;
+	}
+	.avatars > span > img {
+		width: 2.5ch;
+		height: 2.5ch;
+		object-fit: cover;
+		border-radius: 50%;
 	}
 	.card {
 		border-radius: 1.5ch;
@@ -95,8 +104,9 @@
 	}
 
 	.download {
+		display: inline-block;
 		margin-top: 2ch;
-		padding: 1ch 1.5ch;
+		padding: 0.5ch 3.5ch;
 		background: #fff;
 		border-radius: 1ch;
 	}
