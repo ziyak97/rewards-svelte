@@ -22,7 +22,7 @@
 			<span class="divider">|</span>
 			<span class="size">{appSize} MB</span>
 		</div>
-		<div class="download">🔥</div>
+		<div class="download"><img src="download.svg" alt="download" /></div>
 	</article>
 </div>
 
@@ -99,6 +99,12 @@
 		padding: 1ch 1.5ch;
 		background: #fff;
 		border-radius: 1ch;
+	}
+
+	.download img {
+		width: 2ch;
+		height: 2ch;
+		border-radius: 0;
 	}
 
 	.rating {
