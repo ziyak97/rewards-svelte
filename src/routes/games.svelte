@@ -3,6 +3,7 @@
 	import GameFullCard from '$lib/components/games/GameFullCard.svelte';
 	import GameBannerCard from '$lib/components/games/GameBannerCard.svelte';
 	import GameAvatarCard from '$lib/components/games/GameAvatarCard.svelte';
+	import { gameBannersTournament, gameBannersStream } from '$lib/stores/GamesStore';
 </script>
 
 <svelte:head>
@@ -12,15 +13,9 @@
 <GameFullCard />
 
 <HorizontalScroller title="Live Tournament">
-	<GameBannerCard />
-	<GameBannerCard />
-	<GameBannerCard />
-	<GameBannerCard />
-	<GameBannerCard />
-	<GameBannerCard />
-	<GameBannerCard />
-	<GameBannerCard />
-	<GameBannerCard />
+	{#each $gameBannersTournament as gameBanner}
+		<GameBannerCard {...gameBanner} />
+	{/each}
 </HorizontalScroller>
 
 <HorizontalScroller title="Play with your friends" style="background: #efefef">
@@ -36,13 +31,7 @@
 </HorizontalScroller>
 
 <HorizontalScroller title="Live Stream">
-	<GameBannerCard />
-	<GameBannerCard />
-	<GameBannerCard />
-	<GameBannerCard />
-	<GameBannerCard />
-	<GameBannerCard />
-	<GameBannerCard />
-	<GameBannerCard />
-	<GameBannerCard />
+	{#each $gameBannersStream as gameBanner}
+		<GameBannerCard {...gameBanner} />
+	{/each}
 </HorizontalScroller>
