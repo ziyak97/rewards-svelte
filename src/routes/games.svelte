@@ -13,7 +13,7 @@
 <GameFullCard />
 
 <HorizontalScroller title="Live Tournament">
-	{#each $gameBannersTournament as gameBanner}
+	{#each $gameBannersTournament as gameBanner (gameBanner.id)}
 		<GameBannerCard {...gameBanner} />
 	{/each}
 </HorizontalScroller>
@@ -31,7 +31,7 @@
 </HorizontalScroller>
 
 <HorizontalScroller title="Live Stream">
-	{#each $gameBannersStream as gameBanner}
+	{#each $gameBannersStream as gameBanner (gameBanner.id)}
 		<GameBannerCard {...gameBanner} />
 	{/each}
 </HorizontalScroller>

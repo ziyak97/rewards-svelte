@@ -9,7 +9,7 @@
 		<h4>Reedem your points now</h4>
 		<div class="redeem-button">{$total} Points 💸</div>
 	</div>
-	{#each $rewards as reward}
+	{#each $rewards as reward (reward.id)}
 		<RewardsCard {...reward} />
 	{/each}
 </div>
