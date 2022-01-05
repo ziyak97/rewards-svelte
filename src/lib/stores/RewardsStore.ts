@@ -5,24 +5,21 @@ const rewardsData = [
 		id: 1,
 		title: 'Earn points by participating in a poll',
 		points: 5,
-		imageUrl:
-			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtoIXfKWubfB1gxwTS7DfDDyKCxai8sAZMKQ&usqp=CAU',
+		imageUrl: 'community-1.png',
 		isClaimed: false
 	},
 	{
 		id: 2,
 		title: 'Earn points by sharing a review',
 		points: 10,
-		imageUrl:
-			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtoIXfKWubfB1gxwTS7DfDDyKCxai8sAZMKQ&usqp=CAU',
+		imageUrl: 'community-2.png',
 		isClaimed: false
 	},
 	{
 		id: 3,
 		title: 'Earn points by participating in a survey',
 		points: 10,
-		imageUrl:
-			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtoIXfKWubfB1gxwTS7DfDDyKCxai8sAZMKQ&usqp=CAU',
+		imageUrl: 'community-3.png',
 		isClaimed: false
 	}
 ];
