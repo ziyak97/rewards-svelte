@@ -9,7 +9,7 @@
 
 <div class="container">
 	<div class="avatars">
-		<span><img src="avatar1.jpg" alt="profile" /></span>
+		<span><div><span>+5</span></div></span>
 		<span><img src="avatar2.jpg" alt="profile" /></span>
 		<span><img src="avatar3.jpg" alt="profile" /></span>
 	</div>
@@ -52,6 +52,8 @@
 		z-index: -1;
 	}
 	.avatars {
+		display: flex;
+		justify-content: center;
 		position: relative;
 		top: 20px;
 		font-size: 1.3rem;
@@ -76,11 +78,23 @@
 		z-index: 1;
 		left: -15px;
 	}
+	.avatars > span > div {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: 2.5ch;
+		height: 2.5ch;
+		background: #3883d1;
+		border-radius: 50%;
+	}
 	.avatars > span > img {
 		width: 2.5ch;
 		height: 2.5ch;
 		object-fit: cover;
 		border-radius: 50%;
+	}
+	.avatars > span > div > span {
+		font-size: 0.9rem;
 	}
 	.card {
 		border-radius: 1.5ch;
