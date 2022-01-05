@@ -5,13 +5,24 @@
 	export let backgroundUrl: string;
 	export let rating: number;
 	export let appSize: number;
+	export let friends: string[];
 </script>
 
 <div class="container">
 	<div class="avatars">
-		<span><div><span>+5</span></div></span>
+		{#if friends.length > 3}
+			<span><div><span>+{friends.length - 2}</span></div></span>
+			{#each friends.slice(0, 2) as friend}
+				<span><img src={friend} alt="profile" /></span>
+			{/each}
+		{:else}
+			{#each friends.slice(0, 3) as friend}
+				<span><img src={friend} alt="profile" /></span>
+			{/each}
+		{/if}
+		<!-- <span><div><span>+5</span></div></span>
 		<span><img src="avatar2.jpg" alt="profile" /></span>
-		<span><img src="avatar3.jpg" alt="profile" /></span>
+		<span><img src="avatar3.jpg" alt="profile" /></span> -->
 	</div>
 	<article class="card">
 		<img class="background" src={backgroundUrl} alt="background" />

@@ -53,7 +53,17 @@ const socialGamesData = [
 		imageUrl: 'subway-surfers.jpg',
 		backgroundUrl: 'bg-purple.png',
 		rating: 4.1,
-		appSize: 84
+		appSize: 84,
+		friends: [
+			'avatar1.jpg',
+			'avatar2.jpg',
+			'avatar3.jpg',
+			'avatar4.jpg',
+			'avatar5.jpg',
+			'avatar6.jpg',
+			'avatar7.jpg',
+			'avatar8.jpg'
+		]
 	},
 	{
 		id: 2,
@@ -61,7 +71,8 @@ const socialGamesData = [
 		imageUrl: 'wheres-my-water-logo.png',
 		backgroundUrl: 'bg-yellow.png',
 		rating: 4.5,
-		appSize: 9.8
+		appSize: 9.8,
+		friends: ['avatar2.jpg', 'avatar1.jpg', 'avatar3.jpg']
 	},
 	{
 		id: 3,
@@ -69,7 +80,8 @@ const socialGamesData = [
 		imageUrl: 'temple-run-logo.png',
 		backgroundUrl: 'bg-red.png',
 		rating: 4.4,
-		appSize: 22
+		appSize: 22,
+		friends: ['avatar2.jpg', 'avatar1.jpg', 'avatar3.jpg', 'avatar4.jpg', 'avatar5.jpg']
 	},
 	{
 		id: 4,
@@ -77,7 +89,15 @@ const socialGamesData = [
 		imageUrl: 'cut-the-rope-logo.jpg',
 		backgroundUrl: 'bg-purple.png',
 		rating: 3.9,
-		appSize: 21
+		appSize: 21,
+		friends: [
+			'avatar3.jpg',
+			'avatar2.jpg',
+			'avatar1.jpg',
+			'avatar4.jpg',
+			'avatar5.jpg',
+			'avatar6.jpg'
+		]
 	}
 ];
 
