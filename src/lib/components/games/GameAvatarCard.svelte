@@ -93,14 +93,14 @@
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
-		width: 2.5ch;
-		height: 2.5ch;
+		width: 3ch;
+		height: 3ch;
 		background: #3883d1;
 		border-radius: 50%;
 	}
 	.avatars > span > img {
-		width: 2.5ch;
-		height: 2.5ch;
+		width: 3ch;
+		height: 3ch;
 		object-fit: cover;
 		border-radius: 50%;
 	}
